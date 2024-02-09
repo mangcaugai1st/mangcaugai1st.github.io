@@ -8,6 +8,7 @@ import { FooterComponent } from './components/end_user/footer/footer.component';
 import { AComponent } from './components/end_user/a/a.component';
 import { HomeComponent } from './components/end_user/home/home.component';
 import { ThinkPadE590Component } from './components/end_user/a/think-pad-e590/think-pad-e590.component';
+import { BComponent } from './components/end_user/b/b.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { ThinkPadE590Component } from './components/end_user/a/think-pad-e590/th
     FooterComponent,
     AComponent,
     HomeComponent,
-    ThinkPadE590Component
+    ThinkPadE590Component,
+    BComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://mangcaugai1st.github.io/sitemap.xml
