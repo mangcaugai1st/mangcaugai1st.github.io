@@ -6,11 +6,13 @@ import {AComponent} from "./components/end_user/a/a.component";
 import {BComponent} from "./components/end_user/b/b.component";
 
 import {ThinkPadE590Component} from "./components/end_user/a/think-pad-e590/think-pad-e590.component";
+import {MelaleucaComponent} from "./components/end_user/a/melaleuca/melaleuca.component";
 
 const routes: Routes = [
   {path: '', title: 'Home', component: HomeComponent},
   {path: 'A', title: 'Bài viết', component: AComponent},
   {path: 'A/ThinkPad-E590', title: 'Review ThinkPad E590 sau 4 năm sử dụng', component: ThinkPadE590Component},
+  {path: 'A/Melaleuca', title: 'Melaleuca', component: MelaleucaComponent},
 
   {path: 'B', title: 'Tài liệu', component: BComponent},
 

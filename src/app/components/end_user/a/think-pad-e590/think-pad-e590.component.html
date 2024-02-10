@@ -1,24 +1,24 @@
 <div class="container mx-auto">
   <ol class="flex items-center whitespace-nowrap p-4" aria-label="Breadcrumb">
     <li class="inline-flex items-center">
-      <a class="flex items-center text-sm text-gray-500 hover:text-blue-600 focus:outline-none focus:text-blue-600 dark:focus:text-blue-500" routerLink="">
+      <a class="flex items-center text-sm text-gray-500 hover:text-blue-600 focus:outline-none focus:text-blue-600" routerLink="">
         Home
       </a>
-      <svg class="flex-shrink-0 mx-2 overflow-visible h-4 w-4 text-gray-400 dark:text-neutral-600" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
+      <svg class="flex-shrink-0 mx-2 overflow-visible h-4 w-4 text-gray-400" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
     </li>
     <li class="inline-flex items-center">
-      <a class="flex items-center text-sm text-gray-500 hover:text-blue-600 focus:outline-none focus:text-blue-600 dark:focus:text-blue-500" routerLink="/A">
+      <a class="flex items-center text-sm text-gray-500 hover:text-blue-600 focus:outline-none focus:text-blue-600" routerLink="/A">
         Bài viết
-        <svg class="flex-shrink-0 mx-2 overflow-visible h-4 w-4 text-gray-400 dark:text-neutral-600" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
+        <svg class="flex-shrink-0 mx-2 overflow-visible h-4 w-4 text-gray-400" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
       </a>
     </li>
-    <li class="inline-flex items-center text-sm font-semibold text-pink-600 truncate dark:text-gray-200" aria-current="page">
+    <li class="inline-flex items-center text-sm font-semibold text-pink-600 truncate" aria-current="page">
         Review ThinkPad E590 sau 4 năm sử dụng
     </li>
   </ol>
 
   <div class="text-left">
-    <h1 class="mb-2 text-4xl font-bold tracking-tight text-pink-600 dark:text-white">Review ThinkPad E590 sau 4 năm sử dụng</h1>
+    <h1 class="mb-2 text-4xl font-bold tracking-tight text-pink-600">Review ThinkPad E590 sau 4 năm sử dụng</h1>
   </div>
   <div class="lg:text-xl">
     <p>
@@ -34,21 +34,11 @@
       <div class="-m-1.5 overflow-x-auto">
         <div class="p-1.5 min-w-full inline-block align-middle">
           <div class="overflow-hidden">
-            <table class="min-w-full divide-y divide-gray-200 dark:divide-gray-700">
-              <tbody class="divide-y divide-gray-200 dark:divide-gray-700">
-              <tr>
-                <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-800 dark:text-gray-200">CPU</td>
-                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-800 dark:text-gray-200">Intel® Core™ i5-8265U</td>
-              </tr>
-
-              <tr>
-                <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-800 dark:text-gray-200">Card đồ họa Onboard</td>
-                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-800 dark:text-gray-200">Intel® UHD Graphics 620</td>
-              </tr>
-
-              <tr>
-                <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-800 dark:text-gray-200">Card đồ họa rời</td>
-                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-800 dark:text-gray-200">AMD Radeon RX 550X</td>
+            <table class="min-w-full divide-y divide-gray-200">
+              <tbody class="divide-y divide-gray-200">
+              <tr *ngFor="let i of spec">
+                <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-800">{{i.a}}</td>
+                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-800">{{i.b}}</td>
               </tr>
               </tbody>
             </table>
@@ -68,40 +58,12 @@
       <div class="-m-1.5 overflow-x-auto">
         <div class="p-1.5 min-w-full inline-block align-middle">
           <div class="overflow-hidden">
-            <table class="min-w-full divide-y divide-gray-200 dark:divide-gray-700">
-              <tbody class="divide-y divide-gray-200 dark:divide-gray-700">
-              <tr>
-                <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-800 dark:text-gray-200">Visual Studio 2019-2022</td>
-                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-800 dark:text-gray-200">
-                  <img src="assets/images/Visual-Studio-Logo.png" alt="" class="object-fill w-12 h-9">
-                </td>
-              </tr>
-
-              <tr>
-                <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-800 dark:text-gray-200">JetBrains IntelliJ</td>
-                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-800 dark:text-gray-200">
-                  <img src="assets/images/IntelliJ_IDEA_Icon.svg.png" alt="" class="object-fill w-12 h-12">
-                </td>
-              </tr>
-
-              <tr>
-                <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-800 dark:text-gray-200">JetBrains PhpStorm</td>
-                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-800 dark:text-gray-200">
-                  <img src="assets/images/phpstorm_logo.png" alt="" class="object-fill w-12 h-12">
-                </td>
-              </tr>
-
-              <tr>
-                <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-800 dark:text-gray-200">JetBrains Rider</td>
-                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-800 dark:text-gray-200">
-                  <img src="assets/images/rider_logo.png" alt="" class="object-fill w-12 h-12">
-                </td>
-              </tr>
-
-              <tr>
-                <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-800 dark:text-gray-200">ReSharper</td>
-                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-800 dark:text-gray-200">
-                  <img src="assets/images/ReSharper_Icon.png" alt="" class="object-fill w-12 h-12">
+            <table class="min-w-full divide-y divide-gray-200">
+              <tbody class="divide-y divide-gray-200">
+              <tr *ngFor="let i of ide">
+                <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-800">{{i.name}}</td>
+                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-800">
+                  <img src="assets/images/{{i.img}}" alt="" class="object-fill w-12 h-12">
                 </td>
               </tr>
               </tbody>
@@ -119,19 +81,12 @@
       <div class="-m-1.5 overflow-x-auto">
         <div class="p-1.5 min-w-full inline-block align-middle">
           <div class="overflow-hidden">
-            <table class="min-w-full divide-y divide-gray-200 dark:divide-gray-700">
+            <table class="min-w-full divide-y divide-gray-200">
               <tbody>
-              <tr>
-                <td>Genshin Impact</td>
+              <tr *ngFor="let i of game">
+                <td>{{i.name}}</td>
                 <td>
-                  <img src="assets/images/Genshin_Impact_Logo.webp" alt="" class="object-fill h-32">
-                </td>
-              </tr>
-
-              <tr>
-                <td>NieR:Automata</td>
-                <td>
-                  <img src="assets/images/NierAutomata.webp" alt="" class="object-fill h-32">
+                  <img src="assets/images/{{i.img}}" alt="" class="object-fill h-32">
                 </td>
               </tr>
               </tbody>
@@ -150,28 +105,11 @@
       <div class="-m-1.5 overflow-x-auto">
         <div class="p-1.5 min-w-full inline-block align-middle">
           <div class="overflow-hidden">
-            <table class="min-w-full divide-y divide-gray-200 dark:divide-gray-700">
-              <tbody class="divide-y divide-gray-200 dark:divide-gray-700">
-              <tr>
-                <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-800 dark:text-gray-200">
-                  <img src="assets/images/Ubuntu-Logo.png" alt="" class="object-fill md:w-1/2">
-                </td>
-                <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-800 dark:text-gray-200">
-                  <img src="assets/images/Fedora_Logo.png" alt="" class="object-fill md:w-1/2">
-                </td>
-                <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-800 dark:text-gray-200">
-                  <img src="assets/images/Red-Hat-logo.png" alt="" class="object-fill md:w-1/2">
-                </td>
-              </tr>
-              <tr>
-                <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-800 dark:text-gray-200">
-                  <img src="assets/images/OpenSUSE_Logo.png" alt="" class="object-fill md:w-1/2">
-                </td>
-                <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-800 dark:text-gray-200">
-                  <img src="assets/images/btw_i_use_arch.jpg" alt="" class="object-fill md:w-1/2">
-                </td>
-                <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-800 dark:text-gray-200">
-                  <img src="assets/images/gentoo-linux-logo.png" alt="" class="object-fill md:w-1/2">
+            <table class="min-w-full divide-y divide-gray-200">
+              <tbody class="divide-y divide-gray-200">
+              <tr *ngFor="let row of linux">
+                <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-800" *ngFor="let cell of row">
+                  <img src="assets/images/{{cell.img}}" alt="" class="object-fill md:w-1/2">
                 </td>
               </tr>
               </tbody>
