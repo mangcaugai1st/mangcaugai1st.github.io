@@ -10,7 +10,8 @@ export class BComponent {
   document : Document[];
   constructor() {
     this.document = [
-      {file_name: 'Blyxa Japonica.pdf'},
+      {file_name: 'Thành phần Melaleuca trong API Melafix.pdf', release_date: new Date("2021-03")},
+      {file_name: 'Blyxa Japonica.pdf', release_date: new Date("2021-05")}, 
     ]
   }
 }

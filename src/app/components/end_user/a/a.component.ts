@@ -13,7 +13,6 @@ export class AComponent  {
   constructor() { // khởi tạo mảng post với các objects Post
     this.post = [
       {thumbnail: 'ThinkPad-logo.webp', title: 'Review Thinkpad E590 sau hơn 4 năm sử dụng', link: '/A/ThinkPad-E590'},
-      {thumbnail: '102637130_2bae88f100_b.jpg', title: 'Đôi điều về thuốc API Melafix', link: '/A/Melaleuca'},
     ];
   }
 }
