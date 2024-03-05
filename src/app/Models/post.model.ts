@@ -3,4 +3,6 @@ export interface Post {
   title: string;
   link: string;
   status: string;
+  first_release: Date;
+  last_update: Date;
 }
