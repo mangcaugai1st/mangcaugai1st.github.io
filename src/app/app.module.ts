@@ -9,6 +9,7 @@ import { AComponent } from './components/end_user/a/a.component';
 import { HomeComponent } from './components/end_user/home/home.component';
 import { ThinkPadE590Component } from './components/end_user/a/think-pad-e590/think-pad-e590.component';
 import { BComponent } from './components/end_user/b/b.component';
+import { FountainPenComponent } from './components/end_user/a/fountain-pen/fountain-pen.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +20,7 @@ import { BComponent } from './components/end_user/b/b.component';
     HomeComponent,
     ThinkPadE590Component,
     BComponent,
+    FountainPenComponent,
   ],
   imports: [
     BrowserModule,
