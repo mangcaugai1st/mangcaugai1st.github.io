@@ -8,6 +8,8 @@ import {BComponent} from "./components/end_user/b/b.component";
 import {ThinkPadE590Component} from "./components/end_user/a/think-pad-e590/think-pad-e590.component";
 import { FountainPenComponent } from './components/end_user/a/fountain-pen/fountain-pen.component';
 
+import {CComponent} from "./components/end_user/c/c.component";
+
 const routes: Routes = [
   {path: '', title: 'Home', component: HomeComponent},
   {path: 'A', title: 'Bài viết', component: AComponent},
@@ -16,6 +18,7 @@ const routes: Routes = [
 
   {path: 'B', title: 'Tài liệu', component: BComponent},
 
+  {path: 'C', title: 'Tools', component: CComponent}
 ];
 
 @NgModule({

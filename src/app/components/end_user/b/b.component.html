@@ -15,22 +15,10 @@
       Tài liệu
     </li>
   </ol>
-  <table class="table-fixed border border-pink-300">
-    <thead>
-      <tr>
-        <th class="border border-pink-300 text-purple-500">Tên file</th>
-        <th class="border border-pink-300 text-purple-500">Ngày viết</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr *ngFor="let i of document">
-        <td class="border border-pink-300">
-          <h4 class="text-xl"><i class="fa-solid fa-file-pdf" style="color: #e04242;"></i><a
-              href="assets/resource/{{i.file_name}}" target="_blank"
-              class="text-blue-400 hover:text-blue-300">{{i.file_name}}</a></h4>
-        </td>
-        <td class="border border-pink-300"><h4 class="text-xl">{{i.release_date | date: 'MMM, yyyy'}}</h4></td>
-      </tr>
-    </tbody>
-  </table>
+  <div class="flex flex-col md:flex-row justify-between" *ngFor="let i of document">
+    <p class="text-xl"><i class="fa-solid fa-file-pdf" style="color: #e04242;"></i><a
+      href="assets/resource/{{i.file_name}}" target="_blank"
+      class="text-blue-400 hover:text-blue-300">{{i.file_name}}</a></p>
+    <p class="text">{{i.release_date | date: 'MMM, yyyy'}}</p>
+  </div>
 </div>

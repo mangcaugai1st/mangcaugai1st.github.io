@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import {FormsModule} from "@angular/forms";
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -10,6 +11,7 @@ import { HomeComponent } from './components/end_user/home/home.component';
 import { ThinkPadE590Component } from './components/end_user/a/think-pad-e590/think-pad-e590.component';
 import { BComponent } from './components/end_user/b/b.component';
 import { FountainPenComponent } from './components/end_user/a/fountain-pen/fountain-pen.component';
+import { CComponent } from './components/end_user/c/c.component';
 
 @NgModule({
   declarations: [
@@ -21,10 +23,12 @@ import { FountainPenComponent } from './components/end_user/a/fountain-pen/fount
     ThinkPadE590Component,
     BComponent,
     FountainPenComponent,
+    CComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
