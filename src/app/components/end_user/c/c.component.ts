@@ -18,6 +18,13 @@ export class CComponent {
             this.convertedTemperature = (this.temperature - 32) * 5/9 + "°C";
         }
     }
+    Apparent_Power : number = 0;
+    Phi : number = 0;
+    Select_Apparent_Power_Unit = "VA";
+
+    calculateActivePower():void {
+
+    }
 
   isModalOpen: boolean = false;
 
