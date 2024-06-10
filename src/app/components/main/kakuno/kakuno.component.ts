@@ -2,10 +2,10 @@ import { Component } from '@angular/core';
 import {Meta} from '@angular/platform-browser';
 @Component({
   selector: 'app-fountain-pen',
-  templateUrl: './fountain-pen.component.html',
-  styleUrls: ['./fountain-pen.component.css']
+  templateUrl: './kakuno.component.html',
+  styleUrls: ['./kakuno.component.css']
 })
-export class FountainPenComponent {
+export class KakunoComponent {
   constructor(private meta: Meta) { }
   ngOnInit()
   {
